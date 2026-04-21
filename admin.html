@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Админ удирдлага</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f2f5;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .admin-box {
+            background: #ffffff;
+            border-radius: 16px;
+            padding: 48px 50px 44px 50px;
+            width: 340px;
+            box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+            text-align: center;
+        }
+
+        .admin-box h1 {
+            font-size: 24px;
+            font-weight: 800;
+            color: #1a1a2e;
+            margin-bottom: 30px;
+        }
+
+        .admin-links {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .admin-links a {
+            color: #1a73e8;
+            text-decoration: none;
+            font-size: 15px;
+            font-weight: 500;
+            padding: 6px 0;
+            transition: color 0.2s;
+        }
+
+        .admin-links a:hover {
+            color: #0d47a1;
+            text-decoration: underline;
+        }
+
+        .admin-links a.logout {
+            color: #e53935;
+            margin-top: 4px;
+        }
+
+        .admin-links a.logout:hover {
+            color: #b71c1c;
+        }
+    </style>
+<script src="https://sites.super.myninja.ai/_assets/ninja-daytona-script.js"></script>
+</head>
+<body>
+    <div class="admin-box">
+        <h1>Админ удирдлага</h1>
+        <div class="admin-links">
+            <a href="admin-menu.html">Цэс удирдах</a>
+            <a href="admin-news.html">Мэдээ удирдах</a>
+            <a href="login.html" class="logout">Гарах</a>
+        </div>
+    </div>
+</body>
+</html>
